@@ -1,0 +1,9 @@
+services:
+  devops-build-app:
+    build: .
+    image: deepanlm10/dev:latest
+    container_name: devops-build-app
+    ports:
+      - "80:80"
+    restart: always
+
